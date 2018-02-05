@@ -3,6 +3,11 @@
 
 template<typename T>
 
+//Almost Useless Data Structure
+//
+//2/4/2018
+//@author Clay Negen, Seth Pefley
+
 class AUDS {
 
 	public:
