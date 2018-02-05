@@ -41,15 +41,22 @@ class AUDS {
 		}
 		// Returns number of elements in array
 		int size(){
-			return ourData.size();
+			int sum=0;
+			for (int i=0; i<=currentSize; i++){
+				if(ourData[i] != NULL){
+					sum++;
+				}
+			}
+			return sum;
 		}
 		// Pushes a new element of any data type onto the end of the array
 		void push(T x){
-			for (int i=0; i <= currentSize; ++i){
-				if (!ourData[i]){
+			for (int i=0; i <= maxSize; i++){
+				if (ourData[i]== NULL){
 					ourData[i] = x;
 					currentSize++;
-					//checkSize(ourData);	
+					std::cout << "OD after push:" << ourData[i] << std::endl;
+					//checkSize(ourData);
 					break;
 				}
 			//Test Print Statement
